@@ -4,8 +4,8 @@ import Web3Modal from "web3modal";
 import { providers, Contract } from "ethers";
 import { useEffect, useRef, useState } from "react";
 import { WHITELIST_CONTRACT_ADDRESS } from "../constants/contract";
-import abi from "../constants/Whitelist.json";
-abi = abi.abi;
+import data from "../constants/Whitelist.json";
+const abi = data.abi;
 
 export default function Home() {
   // walletConnected keep track of whether the user's wallet is connected or not
